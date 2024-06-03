@@ -9,8 +9,8 @@ layout: page
     <h1 class="title title--h1 first-title title__separate">{{ page.title }}</h1>
     <!-- Authors -->
     <p>{% for author in page.authors %}
-        {% assign giovanni = author | slice: 0, 18%}
-        {% if giovanni == "Giovanni De Felice" %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% if author != page.authors.last %},{% endif %}
+        {% assign federico = author | slice: 0, 18%}
+        {% if federico == "Federico Ottomano" %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% if author != page.authors.last %},{% endif %}
         {% endfor %}</p>
     <!-- Metadata -->
     <p>
