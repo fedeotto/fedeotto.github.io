@@ -1,0 +1,51 @@
+---
+title: Resume
+layout: page
+---
+
+<!-- RESUME -->
+<div id="resume" class="tabcontent">
+    <div class="pb-3">
+        <h1 class="title title--h1 first-title title__separate">Resume</h1>
+    </div>
+    <!-- Experience -->
+    <div class="pb-0">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h2 class="title title--h3">
+                    <svg class="marshkicon title-icon">
+                        <use href="#marshkicon-academic-cap" /></svg>Education</h2>
+                <div class="timeline">
+
+                    {% for item in site.data.resume.education %}
+                    <article class="timeline__item">
+                        <h5 class="title title--h5 timeline__title">
+                            {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.where }}</a>{% else %}{{ item.where }}{% endif %}{% if item.what %} - {{ item.what }}{% endif %}</h5>
+                        <span class="timeline__period">{{ item.start }} — {{ item.end }}</span>
+                        <p class="timeline__description">{{ item.description }}</p>
+                    </article>
+                    {% endfor %}
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <h2 class="title title--h3">
+                    <svg class="marshkicon title-icon">
+                        <use href="#marshkicon-blackboard" /></svg>Internships
+                </h2>
+                <div class="timeline">
+
+                    {% for item in site.data.resume.internships %}
+                    <article class="timeline__item">
+                        <h5 class="title title--h5 timeline__title">
+                            {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.course }}</a>{% else %}{{ item.course }}{% endif %}{% if item.class %} ({{ item.class }}){% endif %}</h5>
+                        <span class="timeline__period">{{ item.start }} — {{ item.end }} @ {{ item.where }}</span>
+                        <p class="timeline__description">{{ item.description }}</p>
+                    </article>
+                    {% endfor %}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

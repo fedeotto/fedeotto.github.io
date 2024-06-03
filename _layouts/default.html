@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+    <main class="main">
+        <div class="container gutter-top">
+            <div class="row sticky-parent">
+                <!-- Sidebar -->
+                {% include sidebar.html %}
+                <!-- Content -->
+                <div class="col-12 col-md-12 col-xl-9">
+                    {{ content }}
+                    <!-- Footer -->
+                    <footer class="footer">© <script>
+                        document.write(new Date().getFullYear())
+                        </script>
+                        Giovanni De Felice</footer>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- define symbol in hidden svg document -->
+    {% include icons.html %}
+    <!-- JavaScripts -->
+    <script src="{{ 'assets/js/jquery-3.4.1.min.js' | absolute_url }}"></script>
+    <script src="{{ 'assets/js/plugins.min.js' | absolute_url }}"></script>
+    <script src="{{ 'assets/js/common.js' | absolute_url }}"></script>
+</body>
+
+</html>

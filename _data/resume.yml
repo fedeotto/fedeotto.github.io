@@ -1,0 +1,43 @@
+education:
+  - where: "University of Liverpool (UK)"
+    what: "Ph.D. Student"
+    course: "Computer Science"
+    url: ""
+    start: "Nov 2020"
+    end: "present"
+    description: "I am currently pursuing my Ph.D. in Computer Science at the University of Liverpool, under the supervision of Vladimir V. Gusev and in collaboration with the Leverhulme research centre for functional materials design."
+  - where: "University of Pisa (IT)"
+    what: "MSc"
+    course: "Particle Physics"
+    url: ""
+    start: 2018
+    end: 2020
+    description: "I graduated with honors (110L/110) in Particle Physics at the University of Pisa. My study plan focused on the experimental aspects of fundamental physics and the statistical analysis of data streams. During my thesis, I actively participated in the 2020 update of the Mu2e experiment sensitivity."
+  - where: "University of Pisa (IT)"
+    what: "BSc"
+    url: ""
+    start: 2015
+    end: 2018
+    description: "Bachelor's Degree in Physics. During my thesis I focused on the experimental and statistical aspects of the research for H → Z𝛾 at the CMS experiments.”"
+  - where: "Scientific Lyceum Ignazio Vian (IT)"
+    what: "High School"
+    course: 
+    start: 2010
+    end: 2015
+    description: "Scientific Lyceum diploma. During my thesis ”Crisis of physical sciences - even watches are clouds (K.Popper)” I analyzed the many reflections in the figurative-arts and literature caused by the paradigm-shift of quantum mechanics."
+internships:
+  - course: "Visiting Researcher"
+    where: "Università della Svizzera Italiana (CH)"
+    start: "Jun 2023" 
+    end: "present"
+    description: ""
+  - course: "Summer Student"
+    where: "Fermi National Accelerator Laboratory (US)"
+    start: "Jul 2019" 
+    end: "Sep 2019"
+    description: "I was selected as a DOE-INFN Summer Students and spent two months at FERMILAB to actively participate in the development of an improved model for antiproton production from protons on heavy nuclei."
+  - course: "Summer Student"
+    where: "Fermi National Accelerator Laboratory (US)"
+    start: "Jul 2019" 
+    end: "Jul 2019"
+    description: "During the HASCO Summer School, at the University of Goettingen, I attended advanced lessons on frontier topics in theoretical and experimental particle physics. In the final exam I obtained an A grade, with special mention."

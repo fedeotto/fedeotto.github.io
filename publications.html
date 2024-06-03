@@ -1,0 +1,58 @@
+---
+title: Publications
+layout: page
+---
+
+<!-- PUBLICATIONS -->
+<div id="publications" class="tabcontent">
+    <div class="pb-2">
+        <h1 class="title title--h1 first-title title__separate">Publications</h1>
+    </div>
+    <!-- Gallery -->
+    <div class="pb-0">
+        <!-- Filter -->
+        <div class="select">
+            <span class="placeholder">Select category</span>
+            <div class="filter-icon">
+            <svg class="marshkicon text-icon rotate-icon-45">
+                    <use href="#marshkicon-plus" /></svg></div>
+            <ul class="filter">
+                <li class="filter__item">Category</li>
+                <li class="filter__item active" data-filter="*"><a class="filter__link active" href="#filter">All</a></li>
+                {% assign categories = site.publications | map: "categories" | uniq %}
+                {% for cat in categories %}
+                    <li class="filter__item" data-filter=".category-{{cat}}"><a class="filter__link" href="#filter">{{cat | capitalize}}</a></li>
+                {% endfor %}
+            </ul>
+            <input type="hidden" name="changemetoo" />
+        </div>
+        <div class="gallery-grid js-masonry js-filter-container">
+            <div class="gutter-sizer"></div>
+            <!-- Publications cards -->
+
+            {% assign publications = site.publications | sort: "order" | reverse %}
+            {% for pub in publications %}
+            <div class="gallery-grid__item {% for cat in pub.categories %}category-{{cat}}{% endfor %}">
+                <a href="{{ pub.url }}">
+                    <div class="gallery-grid__image-wrap">
+                        <img class="gallery-grid__image cover lazyload" src="assets/img/{{ pub.thumbnail }}" alt="" />
+                    </div>
+                </a>
+                <figcaption class="gallery-grid__caption">
+                    <a href="{{ pub.url }}">
+                        <h4 class="title gallery-grid__title">{{ pub.title }}</h4>
+                    </a>
+                    <span class="gallery-grid__category">
+                        {% for author in pub.authors %}
+                            {% assign giovanni = author | slice: 0, 18%}
+                            {% if giovanni == "Giovanni De Felice" %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% if author != pub.authors.last %},{% endif %}
+                        {% endfor %}
+                    </span>
+                </figcaption>
+                <div class="gallery-grid__venue">{{ pub.venue }}</div>
+            </div>
+            {% endfor %}
+        </div>
+        <p class="footnote"><sup>*</sup>Equal contribution.</p>
+    </div>
+</div>
