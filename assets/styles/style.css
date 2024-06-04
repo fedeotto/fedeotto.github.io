@@ -310,7 +310,8 @@ a.decoration--none {
 }
 
 .description {
-    color: var(--box-background-color);
+    /* color: var(--box-background-color); */
+    color: #e41919;
     margin-bottom: 1.875rem;
 }
 
