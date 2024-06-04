@@ -369,7 +369,8 @@ iframe {
 .textarea,
 select,
 .custom-select {
-    background-color: var(--box-background-color);
+    /* background-color: var(--box-background-color); */
+    background-color: #f90b0b;
     border: 1px solid var(--box-background-color);
     border-radius: 20px;
     box-shadow: none;
