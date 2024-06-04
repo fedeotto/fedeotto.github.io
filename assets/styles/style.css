@@ -21,7 +21,7 @@
     --primary-color: var(--primary);
     --primary-color-soft: #009a833f;
     --text-color: #ffffff;
-    --text-color-light: #637280;
+    --text-color-light: #6d7c8b;
     --text-color-on-primary: var(--white);
     --background-color: #21436f; 
     --tab-background-color: var(--white);
@@ -146,15 +146,9 @@ h6 {
     font-size: 1.75rem;
 }
 
-/* @media only screen and (max-width: 580px) {
+@media only screen and (max-width: 580px) {
     .title--h2 {
         font-size: 1.5rem;
-    }
-} */
-
-@media only screen and (max-width: 991px) {
-    .nav-container {
-        background: rgba(48, 43, 64, 0.75);
     }
 }
 
@@ -606,7 +600,8 @@ select option,
 }
 
 .progress {
-    background-color: var(--white);
+    /* background-color: var(--white); */
+    background-color: #ea0101;
     border-radius: 1rem;
     height: 1.5rem;
     margin-bottom: 1.5rem;
