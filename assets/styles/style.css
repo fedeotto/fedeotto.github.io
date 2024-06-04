@@ -20,8 +20,9 @@
     /* colors */
     --primary: #7d9fb6;
     /* --primary-color: var(--primary); */
-    --primary-color: #9a0000;
-    --primary-color-soft: #009a833f;
+    /*Primary color is responsible for clickable words*/
+    --primary-color: #8eb8d4; 
+    --primary-color-soft: #0493c73f;
     --text-color: var(--white);
     /* --text-color-light: #869fb9; */
     --text-color-light: var(--primary);
