@@ -210,7 +210,8 @@ h6 {
 
 .title__separate::before {
     content: '';
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    background-color: #c61b1b;
     border-radius: 0.5rem;
     height: 0.3125rem;
     position: absolute;
@@ -367,8 +368,7 @@ iframe {
 .textarea,
 select,
 .custom-select {
-    /* background-color: var(--box-background-color); */
-    background-color: #1b293b;
+    background-color: var(--box-background-color);
     border: 1px solid var(--box-background-color);
     border-radius: 20px;
     box-shadow: none;
