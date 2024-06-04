@@ -18,8 +18,8 @@
     --body-font: "Archivo", sans-serif;
     --heading-font: "Archivo", sans-serif;
     /* colors */
-    /* --primary: #9ab7ca; */
-    --primary: #bcf000;
+    --primary: #9ab7ca;
+    /* --primary: #bcf000; */
 
     /*Primary color is responsible for clickable words*/
     --primary-color: #8fb2c8; /* color of badge Read CV, tags and paper titles*/
