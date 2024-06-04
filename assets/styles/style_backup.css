@@ -17,7 +17,7 @@
     --body-font: "Archivo", sans-serif;
     --heading-font: "Archivo", sans-serif;
     /* colors */
-    --primary: #74a9cc;
+    --primary: #009a83;
     --primary-color: var(--primary);
     --primary-color-soft: #009a833f;
     --text-color: #2d3845;
@@ -25,7 +25,7 @@
     --text-color-on-primary: var(--white);
     --background-color: #d2d2d2; 
     --tab-background-color: var(--white);
-    --box-background-color: #21436f;
+    --box-background-color: #e7eaea;
 }
 
 html {
