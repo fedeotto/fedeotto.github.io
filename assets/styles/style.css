@@ -823,7 +823,8 @@ button:focus {
 }
 
 .preloader__progress {
-    background: var(--white);
+    /* background: var(--white); */
+    background: #ad0808;
     height: 0.125rem;
     position: absolute;
     top: 0;
