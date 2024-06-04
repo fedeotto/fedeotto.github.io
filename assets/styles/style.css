@@ -19,10 +19,8 @@
     --heading-font: "Archivo", sans-serif;
     /* colors */
     --primary: #9ab7ca;
-    /* --primary-color: var(--primary); */
     /*Primary color is responsible for clickable words*/
-    /* --primary-color: var(--primary);  */
-    --primary-color: #000000;
+    --primary-color: #8fb3cb; /* color of badge Read CV, tags and paper titles*/
     --primary-color-soft: #0493c73f;
     --background-color: #21426c; 
     --tab-background-color: #23344a;
