@@ -22,11 +22,12 @@
     --primary-color-soft: #009a833f;
     --text-color: #ffffff;
     --text-color-light: #869fb9;
-    --text-color-on-primary: var(--white);
     --background-color: #234776; 
     --tab-background-color: #293d57;
     --box-background-color: var(--tab-background-color);
     --second-box-background-color: #202f43;
+    --text-color-on-primary: var(--second-box-background-color);
+
 }
 
 html {
