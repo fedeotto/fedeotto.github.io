@@ -17,7 +17,7 @@
     --body-font: "Archivo", sans-serif;
     --heading-font: "Archivo", sans-serif;
     /* colors */
-    --primary: #74a9cc;
+    --primary: #7eb9e0;
     --primary-color: var(--primary);
     --primary-color-soft: #009a833f;
     --text-color: #ffffff;
@@ -367,7 +367,8 @@ iframe {
 .textarea,
 select,
 .custom-select {
-    background-color: var(--box-background-color);
+    /* background-color: var(--box-background-color); */
+    background-color: #1b293b;
     border: 1px solid var(--box-background-color);
     border-radius: 20px;
     box-shadow: none;
