@@ -22,7 +22,8 @@
     --primary-color: var(--primary);
     --primary-color-soft: #009a833f;
     --text-color: var(--white);
-    --text-color-light: #869fb9;
+    /* --text-color-light: #869fb9; */
+    --text-color-light: var(--primary);
     --background-color: #234776; 
     --tab-background-color: #293d57;
     --second-box-background-color: #202f43;
