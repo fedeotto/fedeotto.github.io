@@ -1022,7 +1022,8 @@ button:focus {
 }
 
 .contacts-block__item a:hover {
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
+    color: var(--second-box-background-color)
 }
 
 .contacts-block .marshkicon {
