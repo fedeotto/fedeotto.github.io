@@ -10,7 +10,7 @@ categories:
 link: https://www.sciencedirect.com/science/article/pii/S0024379521003724
 code: 
 venue: Linear Algebra and its Applications
-thumbnail: thesis.png 
+thumbnail: spectral.png 
 layout: abstract
 order: 1
 ---
