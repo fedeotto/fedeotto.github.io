@@ -12,7 +12,7 @@
 }
 
 :root {
-    --white: #293d57;
+    --white: #ffffff;
     /* fonts */
     --body-font: "Archivo", sans-serif;
     --heading-font: "Archivo", sans-serif;
@@ -20,7 +20,7 @@
     --primary: #7eb9e0;
     --primary-color: var(--primary);
     --primary-color-soft: #009a833f;
-    --text-color: #ffffff;
+    --text-color: var(--white);
     --text-color-light: #869fb9;
     --text-color-on-primary: var(--white);
     --background-color: #234776; 
@@ -1535,7 +1535,8 @@ button:focus {
 }
 
 .nav__item a.active {
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
+    color: var(--white);
 }
 
 .nav__item a.active:hover {
