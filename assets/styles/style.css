@@ -12,7 +12,8 @@
 }
 
 :root {
-    --white: #293d57;
+    /* --white: #293d57; */
+    --white: #ffffff;
     /* fonts */
     --body-font: "Archivo", sans-serif;
     --heading-font: "Archivo", sans-serif;
@@ -20,7 +21,7 @@
     --primary: #7eb9e0;
     --primary-color: var(--primary);
     --primary-color-soft: #009a833f;
-    --text-color: #ffffff;
+    --text-color: var(--white);
     --text-color-light: #869fb9;
     --background-color: #234776; 
     --tab-background-color: #293d57;
@@ -669,10 +670,9 @@ select option,
     }
 }
 
+/* THIS IS THE COLOR OF "Ph.D STUDENT" */
 .badge--light {
-    /* background-color: var(--box-background-color); */
-    /* background-color: var(--white); */
-    background-color: #dc0c0c;
+    background-color: var(--second-box-background-color);
     color: var(--text-color);
 }
 
@@ -1537,7 +1537,8 @@ button:focus {
 }
 
 .nav__item a.active {
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
+    color: var(--white);
 }
 
 .nav__item a.active:hover {
