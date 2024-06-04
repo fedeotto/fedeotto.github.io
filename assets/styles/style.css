@@ -19,7 +19,7 @@
     /* colors */
     --primary: #74a9cc;
     --primary-color: var(--primary);
-    --primary-color-soft: #daff093f;
+    --primary-color-soft: #009a833f;
     --text-color: #ffffff;
     --text-color-light: #637280;
     --text-color-on-primary: var(--white);
@@ -146,9 +146,15 @@ h6 {
     font-size: 1.75rem;
 }
 
-@media only screen and (max-width: 580px) {
+/* @media only screen and (max-width: 580px) {
     .title--h2 {
         font-size: 1.5rem;
+    }
+} */
+
+@media only screen and (max-width: 991px) {
+    .nav-container {
+        background: rgba(48, 43, 64, 0.75);
     }
 }
 
