@@ -26,10 +26,10 @@
     --background-color: #234776; 
     --tab-background-color: #23344a;
     --second-box-background-color: #1a2636;
-    
+    --text-color-light: #9cc1dc;
+
     --text-color: var(--white);
-    /* --text-color-light: #869fb9; */
-    --text-color-light: var(--primary-color);
+    /* --text-color-light: var(--primary-color); */
     --box-background-color: var(--tab-background-color);
     /* --text-color-on-primary: var(--second-box-background-color); */
     --text-color-on-primary: var(--white);
