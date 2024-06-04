@@ -1053,8 +1053,8 @@ button:focus {
 }
 
 .box {
-    /* background-color: var(--tab-background-color); */
-    background-color: #f90b0b;
+    /* color for the top 'About me' section */
+    background-color: var(--tab-background-color);
     border-radius: 20px;
     padding: 1.875rem;
     position: relative;
@@ -1069,7 +1069,8 @@ button:focus {
 }
 
 .box__second {
-    background-color: var(--tab-background-color);
+    /* background-color: var(--tab-background-color); */
+    background-color: #f90b0b; 
     box-shadow: 0 0 10px #92929238;
     border-radius: 15.3846153846px;
 }
