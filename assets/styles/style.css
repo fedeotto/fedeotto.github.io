@@ -1053,7 +1053,8 @@ button:focus {
 }
 
 .box {
-    background-color: var(--tab-background-color);
+    /* background-color: var(--tab-background-color); */
+    background-color: #f90b0b;
     border-radius: 20px;
     padding: 1.875rem;
     position: relative;
