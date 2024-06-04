@@ -671,7 +671,8 @@ select option,
 
 .badge--light {
     /* background-color: var(--box-background-color); */
-    background-color: var(--white);
+    /* background-color: var(--white); */
+    background-color: #dc0c0c;
     color: var(--text-color);
 }
 
@@ -823,8 +824,7 @@ button:focus {
 }
 
 .preloader__progress {
-    /* background: var(--white); */
-    background: #ad0808;
+    background: var(--white);
     height: 0.125rem;
     position: absolute;
     top: 0;
@@ -1537,8 +1537,7 @@ button:focus {
 }
 
 .nav__item a.active {
-    /* color: var(--primary-color); */
-    color: var(--white);
+    color: var(--primary-color);
 }
 
 .nav__item a.active:hover {
