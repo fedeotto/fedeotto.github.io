@@ -1150,7 +1150,8 @@ button:focus {
 }
 
 .box-inner {
-    background-color: var(--box-background-color);
+    /* background-color: var(--box-background-color); */
+    background: var(--second-box-background-color);
     padding-top: 2rem;
     padding-bottom: 2rem;
     position: relative;
