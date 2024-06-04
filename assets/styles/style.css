@@ -1149,9 +1149,9 @@ button:focus {
     }
 }
 
+/* This is the inner part of the box should be left as --box-background-color */
 .box-inner {
-    /* background-color: var(--box-background-color); */
-    background: var(--second-box-background-color);
+    background-color: var(--box-background-color);
     padding-top: 2rem;
     padding-bottom: 2rem;
     position: relative;
@@ -1394,7 +1394,8 @@ button:focus {
     - Navbar
 ----------------------------------------------------------------- */
 .nav-container {
-    background: var(--box-background-color);
+    /* background: var(--box-background-color); */
+    background: var(--second-box-background-color);
     border: 2px solid var(--tab-background-color);
     border-radius: 0 20px 0 20px;
     display: -webkit-box;
