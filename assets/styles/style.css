@@ -208,10 +208,10 @@ h6 {
     position: relative;
 }
 
+/* little line under 'About Me' */
 .title__separate::before {
     content: '';
-    /* background-color: var(--primary-color); */
-    background-color: #c61b1b;
+    background-color: var(--primary-color);
     border-radius: 0.5rem;
     height: 0.3125rem;
     position: absolute;
