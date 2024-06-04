@@ -18,18 +18,18 @@
     --body-font: "Archivo", sans-serif;
     --heading-font: "Archivo", sans-serif;
     /* colors */
-    --primary: #99b6c9;
+    --primary: #9ab7ca;
     /* --primary-color: var(--primary); */
     /*Primary color is responsible for clickable words*/
-    --primary-color: #86aac3; 
+    /* --primary-color: var(--primary);  */
+    --primary-color: #b4d3e7;
     --primary-color-soft: #0493c73f;
     --background-color: #234776; 
     --tab-background-color: #23344a;
     --second-box-background-color: #1a2636;
-    --text-color-light: #fefefe;
 
     --text-color: var(--white);
-    /* --text-color-light: var(--primary-color); */
+    --text-color-light: var(--primary-color);/*color of tags in publications section*/
     --box-background-color: var(--tab-background-color);
     /* --text-color-on-primary: var(--second-box-background-color); */
     --text-color-on-primary: var(--white);
