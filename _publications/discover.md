@@ -10,7 +10,7 @@ categories:
     - materials-informatics
 link: https://pubs.rsc.org/en/content/articlehtml/2024/dd/d3dd00207a
 code: https://github.com/fedeotto/data-aggregation-mi
-venue: Digital Dicovery
+venue: Digital Discovery
 thumbnail: data_aggr.png
 layout: abstract
 order: 5
