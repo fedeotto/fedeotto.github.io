@@ -23,12 +23,13 @@
     /*Primary color is responsible for clickable words*/
     --primary-color: #9dc8e4; 
     --primary-color-soft: #0493c73f;
-    --text-color: var(--white);
-    /* --text-color-light: #869fb9; */
-    --text-color-light: var(--primary);
     --background-color: #234776; 
     --tab-background-color: #23344a;
     --second-box-background-color: #1a2636;
+    
+    --text-color: var(--white);
+    /* --text-color-light: #869fb9; */
+    --text-color-light: var(--primary-color);
     --box-background-color: var(--tab-background-color);
     /* --text-color-on-primary: var(--second-box-background-color); */
     --text-color-on-primary: var(--white);
