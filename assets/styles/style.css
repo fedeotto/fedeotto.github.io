@@ -21,11 +21,12 @@
     --primary-color: var(--primary);
     --primary-color-soft: #009a833f;
     --text-color: #ffffff;
-    --text-color-light: #6d7c8b;
+    --text-color-light: #869fb9;
     --text-color-on-primary: var(--white);
-    --background-color: #21436f; 
-    --tab-background-color: var(--white);
-    --box-background-color: #293d57;
+    --background-color: #234776; 
+    --tab-background-color: #293d57;
+    --box-background-color: var(--tab-background-color);
+    --second-box-background-color: #202f43;
 }
 
 html {
@@ -310,8 +311,7 @@ a.decoration--none {
 }
 
 .description {
-    /* color: var(--box-background-color); */
-    color: #e41919;
+    color: var(--box-background-color);
     margin-bottom: 1.875rem;
 }
 
@@ -369,8 +369,7 @@ iframe {
 .textarea,
 select,
 .custom-select {
-    /* background-color: var(--box-background-color); */
-    background-color: #f90b0b;
+    background-color: var(--box-background-color);
     border: 1px solid var(--box-background-color);
     border-radius: 20px;
     box-shadow: none;
