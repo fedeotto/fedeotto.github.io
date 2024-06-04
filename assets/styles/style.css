@@ -12,7 +12,7 @@
 }
 
 :root {
-    --white: #243a57;
+    --white: #293d57;
     /* fonts */
     --body-font: "Archivo", sans-serif;
     --heading-font: "Archivo", sans-serif;
@@ -25,7 +25,7 @@
     --text-color-on-primary: var(--white);
     --background-color: #21436f; 
     --tab-background-color: var(--white);
-    --box-background-color: #354f72;
+    --box-background-color: #293d57;
 }
 
 html {
