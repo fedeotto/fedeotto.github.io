@@ -7,8 +7,8 @@ categories:
     - mathematics
 link: https://www.sciencedirect.com/science/article/pii/S0024379521003724
 code: 
-venue: Linear Algebra and its Applications
-thumbnail: spectral.png 
+venue: MSc thesis
+thumbnail: thesis.png 
 layout: abstract
 order: 1
 ---
