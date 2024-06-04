@@ -28,7 +28,8 @@
     --tab-background-color: #23344a;
     --second-box-background-color: #1a2636;
     --box-background-color: var(--tab-background-color);
-    --text-color-on-primary: var(--second-box-background-color);
+    /* --text-color-on-primary: var(--second-box-background-color); */
+    --text-color-on-primary: var(--white);
 
 }
 
