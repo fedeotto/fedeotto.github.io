@@ -18,7 +18,7 @@
     --body-font: "Archivo", sans-serif;
     --heading-font: "Archivo", sans-serif;
     /* colors */
-    --primary: #7eb9e0;
+    --primary: #6795b3;
     --primary-color: var(--primary);
     --primary-color-soft: #009a833f;
     --text-color: var(--white);
@@ -26,7 +26,7 @@
     --text-color-light: var(--primary);
     --background-color: #234776; 
     --tab-background-color: #23344a;
-    --second-box-background-color: #202f43;
+    --second-box-background-color: #1a2636;
     --box-background-color: var(--tab-background-color);
     --text-color-on-primary: var(--second-box-background-color);
 
