@@ -3,6 +3,9 @@
         {% for item in site.data.navigation %}
         <li class="nav__item"><a href="{{ item.url | absolute_url }}" class="{% if item.url == page.url %}active{% endif %}">{{ item.title }}</a></li>
         {% endfor %}
-        <li class="nav__item"><a href="#" onclick="return window.toggleTheme();" class="theme-toggle">🌓</a></li>
+        <li class="nav__item"><a href="#" onclick="return window.toggleTheme();" class="theme-toggle" title="Toggle Light/Dark Theme">
+            <span class="light-icon">☀️</span>
+            <span class="dark-icon">�</span>
+        </a></li>
     </ul>
 </div>

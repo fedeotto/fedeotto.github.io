@@ -88,10 +88,10 @@
       <meta name="description" content="Ph.D. student in Computer Science at the University of Liverpool." />
 
       <!-- Styles -->
-      <link rel="stylesheet" type="text/css" href="{{ 'assets/styles/style.css' | absolute_url }}" />
+      <link rel="stylesheet" type="text/css" href="{{ 'assets/styles/style.css' | absolute_url }}" id="theme-light" />
       <link rel="stylesheet" type="text/css" href="{{ 'assets/styles/style-dark.css' | absolute_url }}" id="theme-dark" />
       <script type="text/javascript">
-          const lightTheme = document.querySelector("link[href*='style.css']");
+          const lightTheme = document.querySelector("#theme-light");
           const darkTheme = document.querySelector("#theme-dark");
           let currentTheme = localStorage.getItem("theme");
       
@@ -101,17 +101,32 @@
             localStorage.setItem("theme", currentTheme);
           }
       
+          // Apply the current theme
           if (currentTheme === "light") {
             darkTheme.disabled = true;
+            lightTheme.disabled = false;
+            document.documentElement.setAttribute('data-theme', 'light');
           } else {
             darkTheme.disabled = false;
+            lightTheme.disabled = true;
+            document.documentElement.setAttribute('data-theme', 'dark');
           }
 
           // Add theme toggle function to window object
           window.toggleTheme = function() {
             currentTheme = currentTheme === "light" ? "dark" : "light";
             localStorage.setItem("theme", currentTheme);
-            darkTheme.disabled = (currentTheme === "light");
+            
+            if (currentTheme === "light") {
+              darkTheme.disabled = true;
+              lightTheme.disabled = false;
+              document.documentElement.setAttribute('data-theme', 'light');
+            } else {
+              darkTheme.disabled = false;
+              lightTheme.disabled = true;
+              document.documentElement.setAttribute('data-theme', 'dark');
+            }
+            
             return false;
           };
       </script>

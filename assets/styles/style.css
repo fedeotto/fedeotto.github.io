@@ -12,21 +12,20 @@
 }
 
 :root {
-    /* --white: #293d57; */
     --white: #ffffff;
     /* fonts */
     --body-font: "Archivo", sans-serif;
     --heading-font: "Archivo", sans-serif;
     /* colors */
-    --primary: #9ab7ca;
-    /* --primary: #bcf000; */
-    /*Primary color is responsible for clickable words*/
-    --primary-color: #8fb2c8; /* color of badge Read CV, tags and paper titles*/
-    --primary-color-soft: #0493c73f;
-    --background-color: #21426c; 
-    --tab-background-color: #23344a;
-    --second-box-background-color: #1a2636;
-    --text-color-light: rgb(107, 140, 160);/*color of tags in publications section when not going on with mouse*/
+    --primary: #007bff;  /* A nice blue accent color */
+    --primary-color: #007bff; /* color of badge Read CV, tags and paper titles*/
+    --primary-color-soft: #007bff3f;
+    --background-color: #f8f9fa;  /* Very light gray background */
+    --tab-background-color: #ffffff;  /* White tabs */
+    --box-background-color: #f0f0f0;  /* Light gray boxes */
+    --second-box-background-color: #e9ecef;  /* Another light gray variation */
+    --text-color: #212529;  /* Very dark gray, almost black for text */
+    --text-color-light: #6c757d;  /* Medium gray for secondary text */
 
     --text-color: var(--white);
     --box-background-color: var(--tab-background-color);
@@ -2133,4 +2132,13 @@ img.case-item__icon {
 
 .theme-toggle:hover {
     transform: rotate(45deg);
+}
+
+/* Show/hide appropriate icon based on current theme */
+html[data-theme="light"] .dark-icon {
+    display: none;
+}
+
+html[data-theme="dark"] .light-icon {
+    display: none;
 }

@@ -3,18 +3,21 @@
 ----------------------------------------------------------------- */
 :root {
     /* colors */
-    --primary: #ff994e;
-    --primary-color-soft: #ff994e33;
-    --background-color: #272333;
-    --text-color: #DEDDE0;
-    --box-background-color: #615a79;
-    --tab-background-color: #302C40;
+    --primary: #4e99ff;  /* A nice blue accent color */
+    --primary-color: #4e99ff;
+    --primary-color-soft: #4e99ff33;
+    --background-color: #121212;  /* Nearly black background */
+    --text-color: #e0e0e0;  /* Light gray text for readability */
+    --box-background-color: #1e1e1e;  /* Slightly lighter than background */
+    --tab-background-color: #2a2a2a;  /* Even lighter for tabs */
+    --second-box-background-color: #252525;  /* For secondary boxes */
+    --text-color-light: #b0b0b0;  /* Lighter text for secondary elements */
     --white: #ffffff;
 }
 
 @media only screen and (max-width: 991px) {
     .nav-container {
-        background: rgba(48, 43, 64, 0.75);
+        background: rgba(18, 18, 18, 0.75);
     }
 }
 
@@ -22,26 +25,26 @@
 .textarea,
 select,
 .custom-select {
-    background-color: #2C283A;
-    border: 1px solid #2C283A;
-    color: #fff;
+    background-color: #1e1e1e;
+    border: 1px solid #333333;
+    color: #e0e0e0;
 }
 
 .input:focus,
 .textarea:focus,
 select:focus,
 .custom-select:focus {
-    background-color: #272333;
-    border: 1px solid #0D86FF;
-    color: #fff;
+    background-color: #252525;
+    border: 1px solid #4e99ff;
+    color: #ffffff;
 }
 
 .input--white {
-    background-color: #2C283A;
+    background-color: #2a2a2a;
 }
 
 .input--white:focus {
-    background-color: #2C283A;
+    background-color: #333333;
 }
 
 .textarea--white {
@@ -196,7 +199,45 @@ select option,
 }
 
 .shadow::before {
-    box-shadow: 0px 40px 50px rgba(32, 29, 42, 0.75);
+    box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* Additional dark mode specific styles */
+.box {
+    background-color: var(--tab-background-color);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.box__second {
+    background-color: var(--second-box-background-color);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.case-item__links a {
+    color: var(--text-color);
+}
+
+.badge--light {
+    background-color: #333333;
+    color: #e0e0e0;
+}
+
+a.highlighted, a:hover {
+    color: #6ab0ff;
+}
+
+.social__link {
+    color: var(--text-color);
+}
+
+/* Improved contrast for readability */
+.timeline__period, .case-item__caption, .color--light, .footnote {
+    color: #b0b0b0;
+}
+
+/* Theme toggle button with better visibility in dark mode */
+.theme-toggle {
+    color: #e0e0e0;
 }
 
 .social__link {
