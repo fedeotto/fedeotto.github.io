@@ -2151,6 +2151,12 @@ html[data-theme="light"] .box-inner {
     background-color: var(--tab-background-color);
 }
 
+/* Remove gray side borders in light theme */
+html[data-theme="light"] .box-inner::before,
+html[data-theme="light"] .box-inner::after {
+    display: none;
+}
+
 /* Keep gray background for the inner boxes */
 html[data-theme="light"] .case-item.box.box__second {
     background-color: var(--box-background-color);
