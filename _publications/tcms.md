@@ -25,7 +25,7 @@ categories:
 link: https://pubs.rsc.org/en/content/articlelanding/2025/dd/d5dd00010f
 code: https://github.com/fedeotto/tcms
 venue: Digital Discovery
-thumbnail: data_aggr.png
+thumbnail: tcms.png
 layout: abstract
 order: 5
 ---
