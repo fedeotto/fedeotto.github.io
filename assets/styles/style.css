@@ -17,20 +17,16 @@
     --body-font: "Archivo", sans-serif;
     --heading-font: "Archivo", sans-serif;
     /* colors */
-    --primary: #007bff;  /* A nice blue accent color */
-    --primary-color: #007bff; /* color of badge Read CV, tags and paper titles*/
-    --primary-color-soft: #007bff3f;
+    --primary: #0056b3;  /* Darker blue accent color for better contrast */
+    --primary-color: #0056b3; /* color of badge Read CV, tags and paper titles*/
+    --primary-color-soft: #0056b33f;
     --background-color: #f8f9fa;  /* Very light gray background */
     --tab-background-color: #ffffff;  /* White tabs */
-    --box-background-color: #f0f0f0;  /* Light gray boxes */
-    --second-box-background-color: #e9ecef;  /* Another light gray variation */
+    --box-background-color: #e9ecef;  /* Light gray boxes */
+    --second-box-background-color: #dee2e6;  /* Darker gray variation for better contrast */
     --text-color: #212529;  /* Very dark gray, almost black for text */
-    --text-color-light: #6c757d;  /* Medium gray for secondary text */
-
-    --text-color: var(--white);
-    --box-background-color: var(--tab-background-color);
-    /* --text-color-on-primary: var(--second-box-background-color); */
-    --text-color-on-primary: var(--white);
+    --text-color-light: #495057;  /* Darker gray for secondary text for better contrast */
+    --text-color-on-primary: #ffffff;  /* White text on primary colored backgrounds */
 
 }
 
@@ -2141,4 +2137,34 @@ html[data-theme="light"] .dark-icon {
 
 html[data-theme="dark"] .light-icon {
     display: none;
+}
+
+/* Additional styles for better contrast in light mode */
+html[data-theme="light"] .btn {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 86, 179, 0.15);
+}
+
+html[data-theme="light"] a {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+html[data-theme="light"] a:hover {
+    color: #003c7a;
+}
+
+html[data-theme="light"] .badge--light {
+    background-color: #dee2e6;
+    color: #212529;
+}
+
+/* Ensure proper text color in light theme */
+html[data-theme="light"] .title-icon {
+    color: var(--primary-color);
+}
+
+html[data-theme="light"] .text-color {
+    color: var(--text-color);
 }

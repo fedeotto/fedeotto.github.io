@@ -89,6 +89,17 @@
       <!-- Styles -->
       <link rel="stylesheet" type="text/css" href="{{ 'assets/styles/style.css' | absolute_url }}" id="theme-light" />
       <link rel="stylesheet" type="text/css" href="{{ 'assets/styles/style-dark.css' | absolute_url }}" id="theme-dark" />
+      <style>
+        /* Fix for avatar in dark mode */
+        html[data-theme="dark"] .avatar--180 {
+          max-height: 11.25rem;
+          max-width: 11.25rem;
+          height: 11.25rem;
+          width: 11.25rem;
+          z-index: 1;
+          position: relative;
+        }
+      </style>
       <script type="text/javascript">
           const lightTheme = document.querySelector("#theme-light");
           const darkTheme = document.querySelector("#theme-dark");
@@ -107,7 +118,7 @@
             document.documentElement.setAttribute('data-theme', 'light');
           } else {
             darkTheme.disabled = false;
-            lightTheme.disabled = true;
+            lightTheme.disabled = false; // Load both to allow dark theme to override light theme properties
             document.documentElement.setAttribute('data-theme', 'dark');
           }
 
@@ -122,7 +133,7 @@
               document.documentElement.setAttribute('data-theme', 'light');
             } else {
               darkTheme.disabled = false;
-              lightTheme.disabled = true;
+              lightTheme.disabled = false; // Load both to allow dark theme to override light theme properties
               document.documentElement.setAttribute('data-theme', 'dark');
             }
             

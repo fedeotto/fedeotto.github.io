@@ -3,15 +3,16 @@
 ----------------------------------------------------------------- */
 :root {
     /* colors */
-    --primary: #4e99ff;  /* A nice blue accent color */
-    --primary-color: #4e99ff;
-    --primary-color-soft: #4e99ff33;
+    --primary: #64b5ff;  /* Brighter blue accent color for better contrast on dark background */
+    --primary-color: #64b5ff;
+    --primary-color-soft: #64b5ff33;
     --background-color: #121212;  /* Nearly black background */
     --text-color: #e0e0e0;  /* Light gray text for readability */
     --box-background-color: #1e1e1e;  /* Slightly lighter than background */
     --tab-background-color: #2a2a2a;  /* Even lighter for tabs */
     --second-box-background-color: #252525;  /* For secondary boxes */
     --text-color-light: #b0b0b0;  /* Lighter text for secondary elements */
+    --text-color-on-primary: #ffffff;
     --white: #ffffff;
 }
 
@@ -238,6 +239,46 @@ a.highlighted, a:hover {
 /* Theme toggle button with better visibility in dark mode */
 .theme-toggle {
     color: #e0e0e0;
+}
+
+/* Fix for avatar in dark mode */
+.avatar--180 {
+    max-height: 11.25rem !important;
+    max-width: 11.25rem !important;
+    height: 11.25rem !important;
+    width: 11.25rem !important;
+    position: relative !important;
+    z-index: 1 !important;
+    border-radius: 50% !important;
+}
+
+/* Ensure buttons are visible */
+.btn {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* Fix for links in dark mode */
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: #8ccbff;
+}
+
+/* Fix for text on white elements */
+.badge--gray, .badge--light {
+    color: #1e1e1e;
+}
+
+/* Fix for icons */
+.title-icon {
+    color: var(--primary-color);
+}
+
+.case-item__icon {
+    color: var(--primary-color);
 }
 
 .social__link {
