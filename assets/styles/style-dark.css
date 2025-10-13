@@ -7,7 +7,7 @@
     --primary-color: #64b5ff;
     --primary-color-soft: #64b5ff33;
     --background-color: #121212;  /* Nearly black background */
-    --text-color: #e0e0e0;  /* Light gray text for readability */
+    --text-color: #e0e0e0;   /* Light gray text for readability */
     --box-background-color: #1e1e1e;  /* Slightly lighter than background */
     --tab-background-color: #2a2a2a;  /* Even lighter for tabs */
     --second-box-background-color: #252525;  /* For secondary boxes */
@@ -223,6 +223,12 @@ select option,
     color: #e0e0e0;
 }
 
+/* Fix for the Ph.D. student badge */
+.sidebar .badge--light {
+    background-color: #333333;
+    color: #e0e0e0 !important; /* Force white text color */
+}
+
 a.highlighted, a:hover {
     color: #6ab0ff;
 }
@@ -267,8 +273,8 @@ a:hover {
     color: #8ccbff;
 }
 
-/* Fix for text on white elements */
-.badge--gray, .badge--light {
+/* Fix for text on white elements - except for Ph.D. student badge */
+.badge--gray {
     color: #1e1e1e;
 }
 

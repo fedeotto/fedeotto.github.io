@@ -17,9 +17,9 @@
     --body-font: "Archivo", sans-serif;
     --heading-font: "Archivo", sans-serif;
     /* colors */
-    --primary: #0056b3;  /* Darker blue accent color for better contrast */
-    --primary-color: #0056b3; /* color of badge Read CV, tags and paper titles*/
-    --primary-color-soft: #0056b33f;
+    --primary: #64b5ff;  /* Bright blue accent color to match dark theme */
+    --primary-color: #64b5ff; /* color of badge Read CV, tags and paper titles*/
+    --primary-color-soft: #64b5ff33;
     --background-color: #f8f9fa;  /* Very light gray background */
     --tab-background-color: #ffffff;  /* White tabs */
     --box-background-color: #e9ecef;  /* Light gray boxes */
@@ -2152,7 +2152,7 @@ html[data-theme="light"] a {
 }
 
 html[data-theme="light"] a:hover {
-    color: #003c7a;
+    color: #368dff; /* Lighter blue for hover state */
 }
 
 html[data-theme="light"] .badge--light {
