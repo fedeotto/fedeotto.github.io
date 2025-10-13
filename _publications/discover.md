@@ -1,7 +1,7 @@
 ---
 title: "Not as simple as we thought: A rigorous examination of data aggregation in materials informatics"
 authors:
-    - Federico Ottomano<sup>*</sup>
+    - Federico Ottomano
     - Giovanni De Felice
     - Vladimir Gusev
     - Taylor Sparks
