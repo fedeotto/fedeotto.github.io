@@ -2146,6 +2146,16 @@ html[data-theme="light"] .btn {
     box-shadow: 0 0.5rem 1rem rgba(0, 86, 179, 0.15);
 }
 
+/* Ensure consistent background color for main sections */
+html[data-theme="light"] .box-inner {
+    background-color: var(--tab-background-color);
+}
+
+/* Keep gray background for the inner boxes */
+html[data-theme="light"] .case-item.box.box__second {
+    background-color: var(--box-background-color);
+}
+
 html[data-theme="light"] a {
     color: var(--primary-color);
     font-weight: 500;
