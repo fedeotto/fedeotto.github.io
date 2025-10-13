@@ -1,5 +1,5 @@
 ---
-title: "Investigating extrapolation and low-data challenges via contrastive learning of chemical compositions"
+title: "Reflections from the 2024 Large Language Model (LLM) Hackathon for Applications in Materials Science and Chemistry"
 authors:
     - Yoel Zimmerman
     - Adib Bagzir
