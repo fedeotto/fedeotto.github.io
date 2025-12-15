@@ -32,7 +32,14 @@ layout: page
         <!-- Case Item -->
         <div class="col-12 col-lg-6">
             <div class="case-item box box__second">
-                <img class="case-item__icon" src="assets/img/time_svg.svg" alt="" />
+                <!-- Generative design icon (nodes + connections) -->
+                <svg class="case-item__icon" viewBox="0 0 24 24" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="6" cy="6" r="2" fill="currentColor" />
+                    <circle cx="18" cy="6" r="2" fill="currentColor" />
+                    <circle cx="12" cy="18" r="2" fill="currentColor" />
+                    <path d="M7.5 7.5 L11 12 L16.5 7.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 12 L12 14.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
                 <div>
                     <h3 class="title title--h5">Generative design</h3>
                     <p class="case-item__caption">I am currently exploring generative models for inverse materials design, with a specific focus on diffusion models for crystal structure prediction (CSP).</p>
