@@ -89,6 +89,11 @@
       <!-- Styles -->
       <link rel="stylesheet" type="text/css" href="{{ 'assets/styles/style.css' | absolute_url }}" id="theme-light" />
       <link rel="stylesheet" type="text/css" href="{{ 'assets/styles/style-dark.css' | absolute_url }}" id="theme-dark" />
+  <!-- Theme-aware favicons (SVGs) -->
+  <link id="favicon-light" rel="icon" type="image/svg+xml" href="{{ 'assets/favicon/favicon-light.svg' | absolute_url }}">
+  <link id="favicon-dark" rel="icon" type="image/svg+xml" href="{{ 'assets/favicon/favicon-dark.svg' | absolute_url }}">
+  <!-- legacy ico fallback -->
+  <link rel="shortcut icon" href="{{ 'assets/favicon/favicon.ico' | absolute_url }}" />
       <style>
         /* Fix for avatar in dark mode */
         html[data-theme="dark"] .avatar--180 {
@@ -116,10 +121,16 @@
             darkTheme.disabled = true;
             lightTheme.disabled = false;
             document.documentElement.setAttribute('data-theme', 'light');
+            // set favicons for light
+            try { document.getElementById('favicon-dark').disabled = true; } catch(e){}
+            try { document.getElementById('favicon-light').disabled = false; } catch(e){}
           } else {
             darkTheme.disabled = false;
             lightTheme.disabled = false; // Load both to allow dark theme to override light theme properties
             document.documentElement.setAttribute('data-theme', 'dark');
+            // set favicons for dark
+            try { document.getElementById('favicon-light').disabled = true; } catch(e){}
+            try { document.getElementById('favicon-dark').disabled = false; } catch(e){}
           }
 
           // Add theme toggle function to window object
@@ -131,10 +142,14 @@
               darkTheme.disabled = true;
               lightTheme.disabled = false;
               document.documentElement.setAttribute('data-theme', 'light');
+              try { document.getElementById('favicon-dark').disabled = true; } catch(e){}
+              try { document.getElementById('favicon-light').disabled = false; } catch(e){}
             } else {
               darkTheme.disabled = false;
               lightTheme.disabled = false; // Load both to allow dark theme to override light theme properties
               document.documentElement.setAttribute('data-theme', 'dark');
+              try { document.getElementById('favicon-light').disabled = true; } catch(e){}
+              try { document.getElementById('favicon-dark').disabled = false; } catch(e){}
             }
             
             return false;

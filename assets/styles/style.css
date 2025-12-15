@@ -2181,6 +2181,20 @@ html[data-theme="light"] .title-icon {
     color: var(--primary-color);
 }
 
+/* Theme toggle icons */
+.theme-toggle { display: inline-flex; align-items: center; justify-content: center; }
+.theme-icon { width: 20px; height: 20px; color: currentColor; }
+.light-icon { display: none; }
+.dark-icon { display: none; }
+
+/* Show the correct icon based on the active theme */
+html[data-theme="light"] .light-icon { display: inline-block; }
+html[data-theme="dark"] .dark-icon { display: inline-block; }
+
+/* Slight color adjustments for visibility */
+html[data-theme="light"] .theme-toggle { color: var(--primary-color); }
+html[data-theme="dark"] .theme-toggle { color: var(--text-color); }
+
 html[data-theme="light"] .text-color {
     color: var(--text-color);
 }
