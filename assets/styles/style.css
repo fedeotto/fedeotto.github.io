@@ -1024,7 +1024,7 @@ button:focus {
     /* color: var(--second-box-background-color) */
 }
 
-.contacts-block .marshkicon {
+.contacts-block .siteicon {
     font-size: 1.125rem;
     margin-right: 0.875rem;
 }
@@ -1933,7 +1933,7 @@ img.case-item__icon {
         top: 50%;
         right: 0.125rem;
         transform: translateY(-50%);
-        /*content: url(#marshkicon-view);*/
+    /*content: url(#icon-view);*/
         z-index: 10;
     }
 

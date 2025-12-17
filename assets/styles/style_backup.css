@@ -1923,7 +1923,7 @@ img.case-item__icon {
         top: 50%;
         right: 0.125rem;
         transform: translateY(-50%);
-        /*content: url(#marshkicon-view);*/
+    /*content: url(#icon-view);*/
         z-index: 10;
     }
 

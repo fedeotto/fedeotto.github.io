@@ -23,11 +23,11 @@ layout: page
     <p>{{ page.abstract }}</p>
     <!-- Links -->
     <p class="case-item__links">
-        <a href="{{ page.link }}" target="_blank"><svg class="marshkicon text-icon">
-                <use href="#marshkicon-newspaper" /></svg>Paper</a>
+    <a href="{{ page.link }}" target="_blank"><svg class="siteicon text-icon">
+    <use href="#icon-newspaper" /></svg>Paper</a>
         {% if page.code %}
-        <a href="{{ page.code }}" target="_blank"><svg class="marshkicon text-icon">
-                <use href="#marshkicon-github" /></svg>GitHub</a>
+    <a href="{{ page.code }}" target="_blank"><svg class="siteicon text-icon">
+    <use href="#icon-github" /></svg>GitHub</a>
         <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ page.code | slice: 19, 999 }}?style=social">
         {% endif %}
     </p>
