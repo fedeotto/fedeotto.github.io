@@ -1603,8 +1603,8 @@ button:focus {
 .case-item__icon {
     color: var(--primary-color);
     margin-right: 1.1875rem;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
 }
 /*
 img.case-item__icon {
