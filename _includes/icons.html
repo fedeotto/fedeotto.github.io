@@ -578,65 +578,39 @@
         </g>
     </symbol>
 
-<symbol id="icon-flow-matching" viewBox="0 0 128 512">
-    <title>Flow Matching</title>
-    <!-- Flow Matching - Particle Flow (scaled up) -->
-    <g transform="translate(-0.1,0.1) scale(0.3)">
-    <g id="flow_matching">
-        <!-- Random starting points (scattered at top) -->
-        <circle cx="149" cy="107" r="8.5" fill="#94a3b8"/>
-        <circle cx="235" cy="64" r="8.5" fill="#94a3b8"/>
-        <circle cx="320" cy="128" r="8.5" fill="#94a3b8"/>
-        <circle cx="192" cy="149" r="8.5" fill="#94a3b8"/>
-        <circle cx="363" cy="85" r="8.5" fill="#94a3b8"/>
-        <circle cx="107" cy="171" r="8.5" fill="#94a3b8"/>
-        <circle cx="277" cy="107" r="8.5" fill="#94a3b8"/>
-        <circle cx="213" cy="192" r="8.5" fill="#94a3b8"/>
-        <circle cx="299" cy="171" r="8.5" fill="#94a3b8"/>
-        <circle cx="171" cy="85" r="8.5" fill="#94a3b8"/>
-        <circle cx="341" cy="149" r="8.5" fill="#94a3b8"/>
-        <circle cx="256" cy="128" r="8.5" fill="#94a3b8"/>
-        
-        <!-- Flow paths with varying opacities -->
-        <path d="M 149 107 Q 171 341, 192 576" stroke="#3b82f6" stroke-width="6.4" fill="none" opacity="0.3"/>
-        <path d="M 235 64 Q 247 320, 222 555" stroke="#2563eb" stroke-width="6.4" fill="none" opacity="0.4"/>
-        <path d="M 320 128 Q 307 363, 290 597" stroke="#60a5fa" stroke-width="6.4" fill="none" opacity="0.35"/>
-        <path d="M 192 149 Q 205 384, 213 619" stroke="#3b82f6" stroke-width="6.4" fill="none" opacity="0.3"/>
-        <path d="M 363 85 Q 333 341, 307 589" stroke="#2563eb" stroke-width="6.4" fill="none" opacity="0.25"/>
-        <path d="M 107 171 Q 149 405, 205 606" stroke="#60a5fa" stroke-width="6.4" fill="none" opacity="0.4"/>
-        <path d="M 277 107 Q 265 363, 247 576" stroke="#3b82f6" stroke-width="6.4" fill="none" opacity="0.35"/>
-        <path d="M 213 192 Q 222 405, 235 632" stroke="#2563eb" stroke-width="6.4" fill="none" opacity="0.3"/>
-        <path d="M 299 171 Q 290 384, 277 619" stroke="#60a5fa" stroke-width="6.4" fill="none" opacity="0.25"/>
-        <path d="M 171 85 Q 192 363, 205 563" stroke="#3b82f6" stroke-width="6.4" fill="none" opacity="0.4"/>
-        <path d="M 341 149 Q 307 376, 299 610" stroke="#2563eb" stroke-width="6.4" fill="none" opacity="0.3"/>
-        <path d="M 256 128 Q 256 363, 256 597" stroke="#60a5fa" stroke-width="6.4" fill="none" opacity="0.35"/>
-        
-        <!-- Target shape: Checkerboard pattern (4x4) -->
-        <!-- Row 1 -->
-        <circle cx="192" cy="555" r="10.7" fill="#2563eb"/>
-        <circle cx="235" cy="555" r="10.7" fill="#60a5fa"/>
-        <circle cx="277" cy="555" r="10.7" fill="#2563eb"/>
-        <circle cx="320" cy="555" r="10.7" fill="#60a5fa"/>
-        
-        <!-- Row 2 -->
-        <circle cx="192" cy="597" r="10.7" fill="#60a5fa"/>
-        <circle cx="235" cy="597" r="10.7" fill="#2563eb"/>
-        <circle cx="277" cy="597" r="10.7" fill="#60a5fa"/>
-        <circle cx="320" cy="597" r="10.7" fill="#2563eb"/>
-        
-        <!-- Row 3 -->
-        <circle cx="192" cy="640" r="10.7" fill="#2563eb"/>
-        <circle cx="235" cy="640" r="10.7" fill="#60a5fa"/>
-        <circle cx="277" cy="640" r="10.7" fill="#2563eb"/>
-        <circle cx="320" cy="640" r="10.7" fill="#60a5fa"/>
-        
-        <!-- Row 4 -->
-        <circle cx="192" cy="683" r="10.7" fill="#60a5fa"/>
-        <circle cx="235" cy="683" r="10.7" fill="#2563eb"/>
-        <circle cx="277" cy="683" r="10.7" fill="#60a5fa"/>
-        <circle cx="320" cy="683" r="10.7" fill="#2563eb"/>
-    </g>
-    </g>
+    <symbol id="icon-flow-matching" viewBox="0 0 512 512">
+        <title>Flow Matching</title>
+        <g fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Random points at top -->
+            <circle cx="150" cy="100" r="8"/>
+            <circle cx="256" cy="80" r="8"/>
+            <circle cx="362" cy="100" r="8"/>
+            <circle cx="200" cy="120" r="8"/>
+            <circle cx="312" cy="120" r="8"/>
+            
+            <!-- Flow paths -->
+            <path d="M 150 100 Q 180 250, 200 380" fill="none" opacity="0.4"/>
+            <path d="M 256 80 Q 256 250, 256 380" fill="none" opacity="0.5"/>
+            <path d="M 362 100 Q 332 250, 312 380" fill="none" opacity="0.4"/>
+            <path d="M 200 120 Q 220 250, 228 380" fill="none" opacity="0.3"/>
+            <path d="M 312 120 Q 292 250, 284 380" fill="none" opacity="0.3"/>
+            
+            <!-- Target grid (checkerboard) -->
+            <circle cx="200" cy="380" r="10"/>
+            <circle cx="228" cy="380" r="10"/>
+            <circle cx="256" cy="380" r="10"/>
+            <circle cx="284" cy="380" r="10"/>
+            <circle cx="312" cy="380" r="10"/>
+            
+            <circle cx="214" cy="410" r="10" opacity="0.6"/>
+            <circle cx="242" cy="410" r="10" opacity="0.6"/>
+            <circle cx="270" cy="410" r="10" opacity="0.6"/>
+            <circle cx="298" cy="410" r="10" opacity="0.6"/>
+            
+            <circle cx="228" cy="440" r="10"/>
+            <circle cx="256" cy="440" r="10"/>
+            <circle cx="284" cy="440" r="10"/>
+        </g>
     </symbol>
 
 
