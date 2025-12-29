@@ -9,7 +9,7 @@ categories:
     - Diffusion
 link: https://rethinking-ai.github.io/assets/papers/9_NA_LR_Noise_Adaptive_Low_Ran.pdf
 code: 
-venue: EurIPS 2025 (Rethinking AI Workshop)
+venue: Rethinking AI EurIPS 2025
 thumbnail: nalr.png
 layout: abstract
 order: 6
