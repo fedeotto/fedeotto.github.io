@@ -598,32 +598,37 @@
 
 
 
-    <symbol id="icon-generative-ai" viewBox="0 0 512 512">
+    <symbol id="icon-generative-ai" viewBox="0 0 32 32">
     <title>Generative AI - Gaussian Distribution</title>
     
     <g fill="currentColor" stroke="none">
         
-        <!-- Main Gaussian curve (bell curve) -->
-        <path d="M 40 460 Q 100 380, 150 300 Q 200 220, 256 220 Q 312 220, 362 300 Q 412 380, 472 460 L 40 460 Z" 
-              stroke="currentColor" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        
-        <!-- Horizontal base line -->
-        <line x1="40" y1="460" x2="472" y2="460" stroke="currentColor" stroke-width="16" stroke-linecap="round"/>
-        
-        <!-- Particles falling from above (light blue dots) -->
-        <circle cx="268" cy="40" r="12" fill="#64b5ff"/>
-        <circle cx="240" cy="75" r="10" fill="#64b5ff"/>
-        <circle cx="264" cy="120" r="11" fill="#64b5ff"/>
-        <circle cx="240" cy="165" r="10" fill="#64b5ff"/>
-        <circle cx="272" cy="195" r="11" fill="#64b5ff"/>
-        
-        <!-- Particles inside the distribution (light blue dots) -->
-        <circle cx="286" cy="280" r="10" fill="#64b5ff"/>
-        <circle cx="218" cy="325" r="11" fill="#64b5ff"/>
-        <circle cx="318" cy="335" r="12" fill="#64b5ff"/>
-        <circle cx="244" cy="370" r="10" fill="#64b5ff"/>
-        <circle cx="186" cy="390" r="11" fill="#64b5ff"/>
-        <circle cx="290" cy="425" r="11" fill="#64b5ff"/>
+        <!-- Bell curve (Gaussian distribution) -->
+        <path d="M2 24 Q6 24 9 18 Q12 12 16 12 Q20 12 23 18 Q26 24 30 24" fill="none"/>
+
+        <!-- Baseline -->
+        <line x1="2" y1="24" x2="30" y2="24"/>
+
+        <!-- Latent space core dot -->
+        <circle cx="16" cy="12" r="1.5" fill="currentColor" stroke="none"/>
+
+        <!-- Sampled output dots scattered under the curve -->
+        <circle cx="10" cy="21" r="1" fill="currentColor" stroke="none"/>
+        <circle cx="13.5" cy="17" r="1" fill="currentColor" stroke="none"/>
+        <circle cx="16" cy="16" r="1" fill="currentColor" stroke="none"/>
+        <circle cx="18.5" cy="17" r="1" fill="currentColor" stroke="none"/>
+        <circle cx="22" cy="21" r="1" fill="currentColor" stroke="none"/>
+        <circle cx="8" cy="23" r="1" fill="currentColor" stroke="none"/>
+        <circle cx="24" cy="23" r="1" fill="currentColor" stroke="none"/>
+
+        <!-- Noise input arrow (coming from above) -->
+        <line x1="16" y1="4" x2="16" y2="9.5"/>
+        <polyline points="14,7.5 16,9.5 18,7.5"/>
+
+        <!-- Small label ticks on baseline -->
+        <line x1="8" y1="24" x2="8" y2="25.5"/>
+        <line x1="16" y1="24" x2="16" y2="25.5"/>
+        <line x1="24" y1="24" x2="24" y2="25.5"/>
         
     </g>
     </symbol>
