@@ -600,19 +600,22 @@
 
     <symbol id="icon-generative-ai" viewBox="0 0 32 32">
     <title>Generative AI - Gaussian Distribution</title>
-    
-    <g fill="currentColor" stroke="none">
-        
-        <!-- Bell curve (Gaussian distribution) -->
-        <path d="M2 24 Q6 24 9 18 Q12 12 16 12 Q20 12 23 18 Q26 24 30 24" fill="none"/>
+    <g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
 
+        <!-- Bell curve -->
+        <path d="M2 24 Q6 24 9 18 Q12 12 16 12 Q20 12 23 18 Q26 24 30 24"/>
         <!-- Baseline -->
         <line x1="2" y1="24" x2="30" y2="24"/>
+        <!-- Noise input arrow -->
+        <line x1="16" y1="4" x2="16" y2="9.5"/>
+        <polyline points="14,7.5 16,9.5 18,7.5"/>
+        <!-- Baseline ticks -->
+        <line x1="8" y1="24" x2="8" y2="25.5"/>
+        <line x1="16" y1="24" x2="16" y2="25.5"/>
+        <line x1="24" y1="24" x2="24" y2="25.5"/>
 
-        <!-- Latent space core dot -->
+        <!-- Dots (filled, no stroke) -->
         <circle cx="16" cy="12" r="1.5" fill="currentColor" stroke="none"/>
-
-        <!-- Sampled output dots scattered under the curve -->
         <circle cx="10" cy="21" r="1" fill="currentColor" stroke="none"/>
         <circle cx="13.5" cy="17" r="1" fill="currentColor" stroke="none"/>
         <circle cx="16" cy="16" r="1" fill="currentColor" stroke="none"/>
@@ -620,16 +623,6 @@
         <circle cx="22" cy="21" r="1" fill="currentColor" stroke="none"/>
         <circle cx="8" cy="23" r="1" fill="currentColor" stroke="none"/>
         <circle cx="24" cy="23" r="1" fill="currentColor" stroke="none"/>
-
-        <!-- Noise input arrow (coming from above) -->
-        <line x1="16" y1="4" x2="16" y2="9.5"/>
-        <polyline points="14,7.5 16,9.5 18,7.5"/>
-
-        <!-- Small label ticks on baseline -->
-        <line x1="8" y1="24" x2="8" y2="25.5"/>
-        <line x1="16" y1="24" x2="16" y2="25.5"/>
-        <line x1="24" y1="24" x2="24" y2="25.5"/>
-        
     </g>
     </symbol>
 
